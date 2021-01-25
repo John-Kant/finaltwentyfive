@@ -1,7 +1,6 @@
 import React from 'react'
 import Accordion_ from './Accordion_'
-
-
+import Typed from 'react-typed'
 const Line = (props) => {
   console.log('Console me:', props.datas)
   return (
@@ -38,7 +37,44 @@ const Line = (props) => {
                   className='ui segment d-flex justify-content-between'
                   style={{ background: '#000' }}
                 >
-                  <button key={index} className='ui inverted teal button'>
+                  {item.stop.length - 1 < 0 ? (
+                    <>
+                      <button class='ui inverted red button'>
+                        <Typed
+                          strings={[
+                            'Wrong ittinary. Please click to the swap(<->) button and then Go button.',
+                          ]}
+                          typeSpeed={40}
+                          backSpeed={50}
+                          backDelay={5000}
+                          startDelay={10}
+                          loop
+                        />
+                      </button>
+                    </>
+                  ) : item.length === 0 ? (
+                    <>
+                      <p className='Button yellow'>
+                        your search search match for this specific request Ask{' '}
+                        <br />
+                        Please try another one
+                      </p>
+                    </>
+                  ) : (
+                    <>
+                      <button key={index} className='ui inverted teal button'>
+                        <i className='bus icon'></i>P{item.line}
+                      </button>
+                      <button className='ui inverted teal button'>
+                        In {item.stop.length - 1}{' '}
+                        <span className='px-2'>stops</span>
+                      </button>
+                      <p className='Button yellow'>
+                        Ask the conductor for more info about ticket
+                      </p>
+                    </>
+                  )}
+                  {/* <button key={index} className='ui inverted teal button'>
                     <i className='bus icon'></i>P
                   </button>
                   <button className='ui inverted teal button'>
@@ -47,11 +83,19 @@ const Line = (props) => {
                   </button>
                   <p className='Button yellow'>
                     Ask the conductor for more info about ticket
-                  </p>
+                  </p> */}
                 </div>
               ))
             ) : (
-              <div></div>
+              <div>
+                <>
+                  <p className='Button yellow'>
+                    your search search match for this specific request Ask{' '}
+                    <br />
+                    Please try another one
+                  </p>
+                </>
+              </div>
             )}
           </div>
         </div>

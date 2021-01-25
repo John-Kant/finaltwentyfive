@@ -196,11 +196,13 @@ function FormInput(props) {
             </Link>
 
             <Link to={`/betweencity/${props.id}/${props.title}`}>
-              <button className='ui button-title button'>Available Lines</button>
+              <button className='ui button-title button'>Lines</button>
             </Link>
 
             <Link to={`/insidecity/${props.id}/${props.title}/itineraries`}>
-              <button className='ui button-title button'>Go to inside City</button>
+              <button className='ui button-title button'>
+                Go to inside City
+              </button>
             </Link>
           </div>
         </div>

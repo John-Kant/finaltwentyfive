@@ -23,7 +23,7 @@ const ToggleSwitch = (props) => {
               </Link>
 
               <Link to={`/insidecity/${props.id}/${props.title}`}>
-                <button className='ui button-title button'>Go to inside City</button>
+                <button className='ui button-title button'>Inside City</button>
               </Link>
             </div>
           </div>
