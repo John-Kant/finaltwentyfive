@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --clr-primary-1: hsl(205, 86%, 17%);
+    --clr-primary-2: hsl(205, 77%, 27%);
+    --clr-primary-3: hsl(205, 72%, 37%);
+    --clr-primary-4: hsl(205, 63%, 48%);
+    /* primary/main color */
+    --clr-primary-5: hsl(205, 78%, 60%);
+    /* lighter shades of primary color */
+    --clr-primary-6: hsl(205, 89%, 70%);
+    --clr-primary-7: hsl(205, 90%, 76%);
+    --clr-primary-8: hsl(205, 86%, 81%);
+    --clr-primary-9: hsl(205, 90%, 88%);
+    --clr-primary-10: hsl(205, 100%, 96%);
+    /* darkest grey - used for headings */
+    --clr-grey-1: hsl(209, 61%, 16%);
+    --clr-grey-2: hsl(211, 39%, 23%);
+    --clr-grey-3: hsl(209, 34%, 30%);
+    --clr-grey-4: hsl(209, 28%, 39%);
+    /* grey used for paragraphs */
+    --clr-grey-5: hsl(210, 22%, 49%);
+    --clr-grey-6: hsl(209, 23%, 60%);
+    --clr-grey-7: hsl(211, 27%, 70%);
+    --clr-grey-8: hsl(210, 31%, 80%);
+    --clr-grey-9: hsl(212, 33%, 89%);
+    --clr-grey-10: hsl(210, 36%, 96%);
+    --clr-white: #fff;
+    --clr-black: #222;
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --max-width: 1170px;
+    --fixed-width: 620px;
+  }
+  /*
+  =============== 
+  Global Styles
+  ===============
+  */
+  
+  *,
+  ::after,
+  ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    background: var(--clr-grey-10);
+    color: var(--clr-grey-1);
+    line-height: 1.5;
+    font-size: 0.875rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h4 {
+    letter-spacing: var(--spacing);
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-size: 0.875rem;
+  }
+  p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      font-size: 4rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    body {
+      font-size: 1rem;
+    }
+    h1,
+    h2,
+    h4 {
+      line-height: 1;
+    }
+  }
+
+/* header */
+.header {
+  min-height: calc(100vh - 96px) !important;
+    color: var(--clr-primary-4) !important;
+    margin: 0 !important;
+}
+
+// Home section
+.Home {
+    list-style: none;
+    color: black;
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-image: linear-gradient(
+      90deg,
+      var(--clr-primary-4) 10px,
+      #eee 10px,
+      #eee 11px,
+      transparent 11px
+    );
+    padding: 10px 15px 10px 25px;
+    border: 1px solid #ccc;
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+.text {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  color: var(--clr-primary-4);
+}
+  
+  #query {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 19px;
+    padding: 5px;
+    font-family: calibri light;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  #notebooks {
+    background: whitesmoke;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 35px;
+    width: 360px;
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 0 white;
+    max-height: 450px;
+  }
+  
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    max-height: 390px;
+    overflow-y: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 5px 5px 0 5px;
+    border-left: none;
+    border-right: none;
+  }
+  
+  #notebooks span {
+    display: block;
+    position: absolute;
+    color: var(--clr-white);
+    background: var(--clr-primary-4);
+    bottom: -35px;
+    left: -1px;
+    width: 360px;
+    border-radius: 0 0 5px 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px rgba(255, 255, 255, 0.5);
+  }
+  

@@ -1,0 +1,47 @@
+$colors: (
+  fill: #a972cb,
+  pulse: #ef6eae,
+  close: #ff7f82,
+  raise: #ffa260,
+  up: #e4cb58,
+  slide: #8fc866,
+  offset: #19bc8b,
+);
+
+
+.ch1 {
+  margin-right: 0px !important;
+}
+
+.cm {
+  border-radius: 5px;
+}
+.cbg1 {
+  background: #eff0f6;
+  overflow: scroll;
+}
+.cbg2 {
+  background: #eff0f6;
+}
+
+body {
+  background: url(https://subtlepatterns.com/patterns/retina_wood.png);
+}
+
+.sp {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+
+.sp_1 {
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+
+@media (max-height: 550px) {
+  .sp,
+  .sp_1 {
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+  }
+}

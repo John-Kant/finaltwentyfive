@@ -1,0 +1,267 @@
+:root {
+
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+
+}
+
+.form-2 {
+  width: 800px;
+  margin: 60px auto 30px;
+  height: 170px;
+  padding: 15px;
+  position: relative;
+  z-index: 800;
+  background-color: var(--clr-primary-4);
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 2px 2px
+       rgba(0, 0, 0, 0.2), 0 1px 5px rgba(0, 0, 0, 0.2),
+        0 0 0 12px rgba(255, 255, 255, 0.4);
+
+  .row {
+    margin-top: 1em;
+    display:flex;
+    justify-content: space-between;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  input[name="to"],
+  input[name="from"] {
+  box-sizing: border-box;
+  font-family: "Lato", Calibri, Arial, sans-serif;
+  font-size: 13px ;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  padding: 5px;
+
+  margin-bottom: 9px;
+  border: 3px solid #ebe6e2;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  z-index: 800;
+  &:hover {
+    border-color: #ccc;
+  }
+  &:focus {
+    outline: none;
+   
+  }
+  }
+  label {
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+  i {
+    margin-right: 5px; /* Gap between icon and text */
+    display: inline-block;
+    width: 10px;
+  }
+  &:hover ~ input {
+    border-color: #ccc;
+  }
+}
+
+
+
+.mybtn{
+  position: absolute;
+  top: 45%;
+  left: 96.5%;
+
+  border-radius: 50px;
+  width: 40px;
+}
+
+  span .mybtn--1{
+  text-align: center;
+}
+.showpassword,.showpassword_1 {
+  height: 50px;
+  border-radius: 5px;
+}
+.showpassword{
+
+margin:2rem auto ;
+position: absolute;
+top: 30px;
+left: -60px;
+}
+.showpassword_1{
+position: absolute;
+top: 30px;
+left: 5px;
+margin: 2rem auto;
+}
+
+.icon{margin: 6.5rem 2rem !important;
+position: relative;
+width: 40px;
+height: 25px;
+top:0rem;
+right: 15%;
+.arr{
+  position: absolute;
+  top:1.5px;
+  right: 20%;
+  font-size: 25px;
+
+}
+}
+
+.ul-cust{
+  background: #fffaf6 ;
+  margin: auto auto;
+}
+.btn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px #ab3c3c;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+.btn-2g {
+  border-radius: 40px;
+  background: #ab3c3c;
+}
+
+.btn-2g:hover {
+	box-shadow: 0px 2px #ab3c3c;
+	top: 2px;
+}
+
+.btn-2g:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+}
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: white;
+	background: #FF3CAC;
+	cursor: pointer;
+	
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/* Button 1b */
+.btn-1b:after {
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #fff;
+}
+
+.btn-1b:hover,
+.btn-1b:active {
+	color: #0e83cd;
+}
+
+.btn-1b:hover:after,
+.btn-1b:active:after {
+	height: 100%;
+}
+.btn-1 {
+	border: 3px solid #fff;
+	color: #fff;
+}
+
+@media(max-width:45rem)
+{
+ .form-2 {
+  /* Size and position */
+  width: 400px;
+  //margin: 60px auto 30px;
+  height: 270px;
+  padding: 15px;
+  position: relative;
+  z-index: 800; 
+
+  
+ }
+ .showpassword{
+
+margin:auto;
+position: absolute;
+top: -10px;
+left: 0px;
+
+
+}
+.showpassword_1{
+position: absolute;
+margin: auto;
+top: 4px;
+left: 0px;
+
+}
+
+.icon{//margin: 6.5rem 6rem !important;
+position: relative;
+width: 40px;
+height: 25px;
+top: 30px;
+left: 90px;
+.arr{
+  position: absolute;
+  //top:1.5px;
+  //left: 20%;
+  font-size: 25px;
+
+}
+}
+
+// .mybtn{
+//   position: absolute;
+//   top: 1%;
+//   left: 50%;
+//   border-radius: 50px;
+//   width: 40px;
+// }
+
+input[name="to"],
+input[name="from"] {
+  box-sizing: border-box;
+  font-family: "Lato", Calibri, Arial, sans-serif;
+  font-size: 13px ;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+
+  margin-bottom: 9px;
+  border: 3px solid #ebe6e2;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+  z-index: 800;
+  &:hover {
+    border-color: #ccc;
+  }
+  &:focus {
+    outline: none;
+   
+  }
+}
+}
+}

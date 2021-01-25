@@ -1,0 +1,38 @@
+:root {
+  --clr-primary-4: hsl(205, 63%, 48%);
+  --mainWhite: #fff;
+  --mainTransition: all 0.3s linear;
+  --mainBorderRadius: 0.25rem;
+  --maxWidth: 40rem;
+  --smallWidth: 85vw;
+  --fullWidth: 1170px;
+}
+
+/*
+====== 
+Scroll Button
+====== 
+*/
+.scroll-btn {
+  position: fixed;
+  right: 0.9rem;
+  bottom: 4.5rem;
+
+  background-color: var(--clr-primary-4);
+
+  color: var(--mainWhite);
+  z-index: -100;
+  opacity: 0;
+  transition: var(--mainTransition);
+  font-size: 2rem;
+  line-height: 0;
+  padding: 0.3rem 0.5rem;
+  transition: visibility 0s linear 0.9s, opacity 0.9s linear;
+  cursor: pointer;
+}
+
+.show-scroll-btn {
+  z-index: 100;
+  opacity: 1;
+  transition-delay: 0s;
+}

@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./components/insidethecity/Detail/inputform";
+@import "./components/insidethecity/Detail/timeline";
+@import "./components/insidethecity/Detail/toggleswitch";
+@import "./components/insidethecity/insidecity";
+@import "./components/insidethecity/Detail/accordion";
+@import './help/backtotop';
+
+// individual components
+@import './App.scss';
+@import './components/Navbar.scss';
+@import './components/Home.scss';
+@import './components/About.scss';
+@import './components/Contact.scss';
+
